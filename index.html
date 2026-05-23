@@ -1,0 +1,136 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Julius Patrick Buenabajo - Portfolio</title>
+    <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+    <div class="blob blob1"></div>
+    <div class="blob blob2"></div>
+    <div class="blob blob3"></div>
+
+    <nav class="nav">
+        <div class="logo">PORTFOLIO</div>
+        <div class="links">
+            <a href="#about">About</a>
+            <a href="#brand-campaigns">Works</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+
+    <!-- ================= ABOUT SECTION ================= -->
+    <section id="about" class="section about-section">
+        <div class="line">Julius Patrick I. Buenabajo</div>
+        <div class="line">Social Media Specialist | Admin Support</div>
+        <div class="line">
+            Specializing in digital content creation, community engagement, and data-driven brand communication across multiple platforms.
+        </div>
+        <div class="line about-link" id="about-toggle-btn" onclick="toggleAboutSection()">
+            read more >>
+        </div>
+
+        <!-- Inline About Details Panel -->
+        <div id="about-extended" class="inline-extended-content">
+            <div id="about-extended" class="inline-extended-panel">
+                <div class="about-content-wrapper">
+                    <h3>About Me</h3>
+                    <p>I’m a copywriter and social media content creator focused on creating engaging brand messaging and creative social media concepts. I enjoy building content that connects with audiences through relatable storytelling, strategic brand voice, and visually engaging campaigns.</p>
+                    <br /><br />
+                    <p>I’ve worked on brands in food, lifestyle, and beverage industries, helping create campaigns that align with each brand’s identity and audience.</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ================= BRAND CAMPAIGNS SECTION ================= -->
+    <section id="brand-campaigns" class="section works-section">
+        <div class="campaign-block layout-centered">
+            <div class="campaign-header">
+                <h3>Brand Campaigns</h3>
+                <p class="subheader">Social Media Management & Content Strategy</p>
+            </div>
+
+            <div class="lift-cards">
+                <div class="lift-card" onclick="openInlineCampaign(this, 0)">
+                    <div class="card-image-wrapper">
+                        <img src="assets/BrandB/BrandB_IMG1.png" alt="Daily's Diet Campaign Cover">
+                    </div>
+                    <span>Daily's Diet</span>
+                    <div class="read-more-text">read more >></div>
+                </div>
+
+                <div class="lift-card" onclick="openInlineCampaign(this, 1)">
+                    <div class="card-image-wrapper">
+                        <img src="assets/BranA/BrandA_IMG_1.png" alt="UCC Coffee Lifestyle">
+                    </div>
+                    <span>UCC Coffee Lifestyle</span>
+                    <div class="read-more-text">read more >></div>
+                </div>
+
+                <div class="lift-card" onclick="openInlineCampaign(this, 2)">
+                    <div class="card-image-wrapper">
+                        <img src="assets/BrandC/BrandC_IMG1.png" alt="Dimsum Factory Campaign Cover">
+                    </div>
+                    <span>Dimsum Factory</span>
+                    <div class="read-more-text">read more >></div>
+                </div>
+            </div>
+
+            <!-- Inline Content Display for Brand Campaigns -->
+            <div class="works-extended-panel">
+                <button class="close-x-inline" onclick="closeInlineCampaign(this)">×</button>
+
+                <div class="layout-split">
+                    <div class="mag-stack-horizontal">
+                        <div class="mag-card popup-mag-card" onclick="activateInlineAccordion(this, 0)">
+                            <img class="modal-img-0" src="assets/img1.png" alt="Slide 1">
+                        </div>
+                        <div class="mag-card popup-mag-card" onclick="activateInlineAccordion(this, 1)">
+                            <img class="modal-img-1" src="assets/img2.png" alt="Slide 2">
+                        </div>
+                        <div class="mag-card popup-mag-card" onclick="activateInlineAccordion(this, 2)">
+                            <img class="modal-img-2" src="assets/img3.png" alt="Slide 3">
+                        </div>
+                    </div>
+                    <div class="split-text popup-text">
+                        <h3 class="modal-title">Campaign Title</h3>
+                        <div class="modal-desc">Campaign description and responsibilities layout.</div>
+                    </div>
+                </div>
+
+                <div class="extended-divider"></div>
+
+                <div class="campaign-articles">
+                    <!-- Injected via JavaScript -->
+                </div>
+
+                <div class="campaign-gallery">
+                    <h4>Campaign Gallery</h4>
+                    <div class="gallery-track">
+                        <!-- Images will go here -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <footer id="contact" class="footer">
+        <p>juliuspbuenabajo@gmail.com &nbsp;|&nbsp; +63 956 409 0307</p>
+        <p>SJDM, Bulacan, Philippines</p>
+    </footer>
+
+    <!-- The Modal (hidden by default) -->
+    <div id="image-modal" class="modal">
+        <span class="close-btn">&times;</span>
+        <img class="modal-content" id="modal-img">
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

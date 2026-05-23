@@ -1,0 +1,671 @@
+﻿/* ================= GLOBAL ARCHITECTURE ================= */
+body {
+    margin: 0;
+    font-family: "-apple-system", BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background: linear-gradient(120deg, #8b6c5c, #3d251e, #a08679);
+    overflow-x: hidden;
+    color: #f5ebe0; /* Warm-cream default text color */
+}
+
+
+
+/* ================= BACKGROUND BLOBS ================= */
+.blob {
+    position: fixed;
+    width: 35vw;
+    height: 35vw;
+    min-width: 250px;
+    border-radius: 50%;
+    filter: blur(80px);
+    opacity: 0.25;
+    z-index: -1;
+    animation: floatBlobs 12s infinite ease-in-out;
+}
+
+.blob1 {
+    background: #ffebd6;
+    top: -5%;
+    left: -5%;
+}
+
+.blob2 {
+    background: #1a0f0a;
+    bottom: -5%;
+    right: -5%;
+}
+
+.blob3 {
+    background: #4a2e22;
+    top: 40%;
+    left: 55%;
+}
+
+@keyframes floatBlobs {
+    0%, 100% {
+        transform: translateY(0) scale(1);
+    }
+
+    50% {
+        transform: translateY(25px) scale(1.03);
+    }
+}
+
+/* ================= NAV BAR (Dark Glass) ================= */
+.nav {
+    position: fixed;
+    top: 16px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px 24px;
+    background: rgba(20, 10, 5, 0.45);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-radius: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    box-sizing: border-box;
+}
+
+.logo {
+    font-weight: 700;
+    letter-spacing: 1px;
+    font-size: 14px;
+    color: #ffffff;
+}
+
+.links a {
+    margin-left: 16px;
+    text-decoration: none;
+    color: #e3d5ca;
+    font-size: 14px;
+    opacity: 0.8;
+    transition: opacity 0.3s, color 0.3s;
+}
+
+    .links a:hover {
+        opacity: 1;
+        color: #ffffff;
+    }
+
+/* Styling for the new About Me section */
+.about-content-wrapper {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+    .about-content-wrapper h3 {
+        font-size: 34px;
+        margin: 0 0 12px 0;
+        font-weight: 700;
+        color: #ffffff;
+    }
+
+    .about-content-wrapper p {
+        font-size: 15px;
+        line-height: 1.6;
+        color: #e3d5ca;
+        margin: 0;
+    }
+
+/* ================= SECTION GLASS CARDS ================= */
+.section {
+    padding: 60px 40px;
+    margin: 40px auto;
+    max-width: 1200px;
+    width: calc(100% - 32px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: rgba(30, 15, 10, 0.45);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-radius: 24px;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+    box-sizing: border-box;
+}
+
+/* ================= ABOUT SECTION ================= */
+.about-section {
+    margin-top: 120px;
+}
+
+.line {
+    opacity: 0;
+    animation: frameFadeUp 1s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
+}
+
+    .line:nth-child(1) {
+        animation-delay: 0.1s;
+        font-size: 42px;
+        font-weight: 700;
+        color: #ffffff;
+    }
+
+    .line:nth-child(2) {
+        animation-delay: 0.3s;
+        font-size: 28px;
+        font-weight: 400;
+        color: #f5ebe0;
+        margin-top: 8px;
+    }
+
+    .line:nth-child(3) {
+        animation-delay: 0.5s;
+        font-size: 20px;
+        font-weight: 300;
+        color: #e3d5ca;
+        max-width: 800px;
+        line-height: 1.6;
+        margin-top: 24px;
+    }
+
+.about-link {
+    animation-delay: 0.7s;
+    font-size: 16px;
+    font-weight: 600;
+    color: #ffffff;
+    margin-top: 24px;
+    cursor: pointer;
+    display: inline-block;
+    transition: opacity 0.2s, color 0.2s;
+}
+
+    .about-link:hover {
+        color: #d4a373;
+        opacity: 1;
+    }
+
+@keyframes frameFadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ================= WORKS SECTION ================= */
+.works-section {
+    margin-top: 24px;
+    padding: 50px 40px;
+}
+
+.layout-centered {
+    text-align: center;
+}
+
+.campaign-header h3 {
+    font-size: 44px;
+    margin: 0 0 8px 0;
+    font-weight: 700;
+    color: #ffffff;
+    letter-spacing: -0.5px;
+}
+
+.subheader {
+    font-size: 16px;
+    margin: 0 0 40px 0;
+    color: #e3d5ca;
+    font-weight: 400;
+}
+
+/* ================= PORTFOLIO DISPLAY CARDS ================= */
+.lift-cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 32px;
+    width: 100%;
+}
+
+.lift-card {
+    flex: 1;
+    max-width: 340px;
+    height: 440px;
+    border-radius: 20px;
+    overflow: hidden;
+    cursor: pointer;
+    position: relative;
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.3);
+    transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1), box-shadow 0.4s ease;
+}
+
+    .lift-card:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 22px 45px rgba(0, 0, 0, 0.4);
+    }
+
+.card-image-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: #1a0f0a;
+}
+
+.lift-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.lift-card:hover img {
+    transform: scale(1.04);
+}
+
+.card-image-wrapper::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 65%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.4) 50%, rgba(0, 0, 0, 0) 100%);
+    pointer-events: none;
+    z-index: 1;
+}
+
+.lift-card span {
+    position: absolute;
+    bottom: 56px;
+    left: 24px;
+    right: 24px;
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: -0.3px;
+    z-index: 2;
+    text-align: left;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.8);
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.read-more-text {
+    position: absolute;
+    bottom: 24px;
+    left: 24px;
+    color: #d4a373;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    z-index: 2;
+    opacity: 0.9;
+    text-shadow: 0 1px 4px rgba(0, 0, 0, 0.8);
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.lift-card:hover span {
+    color: #ffffff;
+    transform: translateY(-2px);
+}
+
+.lift-card:hover .read-more-text {
+    color: #ffffff;
+    transform: translateX(4px);
+}
+
+/* ================= INLINE EXPANDABLE PANELS ================= */
+.inline-extended-content,
+.works-extended-panel {
+    max-height: 0;
+    margin: 0; /* Changed to 0 so there's absolutely no invisible space */
+    padding: 0; /* Changed to 0 to prevent box expansion when closed */
+    opacity: 0;
+    overflow: hidden;
+    visibility: hidden;
+    background: rgba(20, 10, 5, 0.35);
+    border-radius: 20px;
+    border: 1px solid transparent;
+    box-sizing: border-box;
+    position: relative;
+    text-align: left;
+    transition: max-height 0.6s ease-in-out, margin 0.4s ease, padding 0.4s ease, opacity 0.4s ease, visibility 0.4s;
+}
+
+    .inline-extended-content.visible,
+    .works-extended-panel.visible {
+        max-height: 4000px;
+        margin-top: 40px;
+        padding: 45px; /* Restores the padding only when expanded */
+        opacity: 1;
+        visibility: visible;
+        border-color: rgba(255, 255, 255, 0.08);
+    }
+
+.layout-split {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.split-text {
+    flex: 1;
+    max-width: 400px;
+    text-align: left;
+}
+
+    .split-text h3 {
+        font-size: 34px;
+        margin: 0 0 12px 0;
+        font-weight: 700;
+        color: #ffffff;
+    }
+
+    .split-text p {
+        font-size: 15px;
+        line-height: 1.6;
+        color: #e3d5ca;
+        margin: 0;
+    }
+
+/* ================= CAROUSEL / MAGAZINE STACK ================= */
+.mag-stack-horizontal {
+    display: flex;
+    width: 100%;
+    max-width: 480px;
+    height: 460px;
+    align-items: center;
+    gap: 10px;
+}
+
+    .mag-stack-horizontal.single-image {
+        max-width: 350px;
+        height: 400px;
+    }
+
+.mag-card.static-card {
+    flex: 1;
+    cursor: default;
+}
+
+.mag-card {
+    flex: 0.4;
+    height: 100%;
+    border-radius: 14px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+    transition: flex 0.5s cubic-bezier(0.25, 1, 0.5, 1), filter 0.5s ease, opacity 0.5s ease;
+    cursor: pointer;
+    overflow: hidden;
+    background: #1a0f0a;
+}
+
+    .mag-card img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .mag-card.active {
+        flex: 3;
+        filter: blur(0px);
+        z-index: 10;
+        opacity: 1;
+        aspect-ratio: auto;
+        box-shadow: 0 14px 32px rgba(0, 0, 0, 0.4);
+    }
+
+    .mag-card.blurred {
+        flex: 0.3;
+        filter: blur(2px);
+        opacity: 0.45;
+    }
+
+/* ================= INTERACTIVE CLOSE BUTTON ================= */
+.close-x-inline {
+    position: absolute;
+    top: 16px;
+    right: 20px;
+    background: transparent;
+    border: none;
+    font-size: 32px;
+    color: #ffffff;
+    cursor: pointer;
+    font-weight: 300;
+    line-height: 1;
+    transition: transform 0.2s, color 0.2s;
+    z-index: 5;
+    opacity: 0.7;
+}
+
+    .close-x-inline:hover {
+        transform: scale(1.15);
+        color: #d4a373;
+        opacity: 1;
+    }
+
+/* ================= EXTENDED CONTENT DIVIDER ================= */
+.extended-divider {
+    width: 100%;
+    height: 1px;
+    background: rgba(255, 255, 255, 0.1);
+    margin: 60px 0;
+}
+
+/* ================= ALTERNATING ARTICLES (Social Post Style) ================= */
+.campaign-articles {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+.article-block {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+    background: rgba(255, 255, 255, 0.03);
+    padding: 20px;
+    border-radius: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+    .article-block:nth-child(even) {
+        flex-direction: row-reverse;
+    }
+
+.article-img-wrapper {
+    width: 300px;
+    height: 100%;
+    flex-shrink: 0;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+    .article-img-wrapper img {
+        width: 100%;
+        height: 100%;
+        display: block;
+        object-fit: cover;
+    }
+
+.article-text {
+    flex: 1;
+    color: #e3d5ca;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+/* ================= SCROLLABLE GALLERY ================= */
+.campaign-gallery {
+    margin-top: 60px;
+}
+
+    .campaign-gallery h4 {
+        font-size: 20px;
+        color: #ffffff;
+        margin-bottom: 24px;
+        font-weight: 600;
+    }
+
+.gallery-track {
+    display: flex;
+    gap: 16px;
+    overflow-x: auto;
+    padding-bottom: 20px;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: thin;
+    scrollbar-color: #d4a373 rgba(0,0,0,0.2);
+}
+
+    .gallery-track::-webkit-scrollbar {
+        height: 8px;
+    }
+
+    .gallery-track::-webkit-scrollbar-track {
+        background: rgba(0, 0, 0, 0.2);
+        border-radius: 4px;
+    }
+
+    .gallery-track::-webkit-scrollbar-thumb {
+        background: #d4a373;
+        border-radius: 4px;
+    }
+
+.gallery-img {
+    flex: 0 0 auto;
+    width: 280px;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 12px;
+    scroll-snap-align: start;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+    .gallery-img:hover {
+        transform: translateY(-5px);
+    }
+
+
+/* === MODAL OVERLAY STYLES === */
+.modal {
+    display: none; /* Keeps it hidden until clicked */
+    position: fixed !important; /* Forces it to hover over the screen */
+    z-index: 9999 !important; /* Ensures it stays on top of headers/navbars */
+    left: 0;
+    top: 0;
+    width: 100vw !important; /* Forces it to span the full viewport width */
+    height: 100vh !important; /* Forces it to span the full viewport height */
+    background-color: rgba(0, 0, 0, 0.85) !important; /* The dark overlay */
+    overflow: hidden;
+}
+
+/* === THE BIG IMAGE === */
+.modal-content {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Perfectly centers the image */
+    max-width: 90%;
+    max-height: 85vh; /* Prevents the image from being taller than the screen */
+    border-radius: 8px;
+    object-fit: contain; /* Ensures the image doesn't stretch weirdly */
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5); /* Optional: adds a nice shadow */
+}
+
+/* === THE CLOSE BUTTON === */
+.close-btn {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    color: white;
+    font-size: 50px;
+    font-weight: bold;
+    cursor: pointer;
+    z-index: 10000;
+    line-height: 1;
+}
+
+    .close-btn:hover {
+        color: #ccc;
+    }
+/* ================= FOOTER ================= */
+.footer {
+    text-align: center;
+    padding: 50px 20px;
+    color: #e3d5ca;
+    font-size: 14px;
+    border-top: 1px solid rgba(255,255,255,0.1);
+}
+
+/* ================= RESPONSIVE DESIGN ================= */
+@media (max-width: 860px) {
+    .lift-cards {
+        flex-direction: column;
+        align-items: center;
+        gap: 24px;
+    }
+
+    .lift-card {
+        width: 100%;
+        max-width: 360px;
+        height: 420px;
+    }
+
+    .section {
+        padding: 35px 20px;
+        margin: 20px auto;
+    }
+
+    .about-section {
+        margin-top: 100px;
+    }
+
+    .layout-split {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .split-text {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .mag-stack-horizontal {
+        max-width: 100%;
+        height: 380px;
+    }
+
+    .inline-extended-content.visible,
+    .works-extended-panel.visible {
+        padding: 40px 20px 30px 20px;
+    }
+
+    .close-x-inline {
+        top: 12px;
+        right: 16px;
+    }
+}
+
+@media (max-width: 600px) {
+    .article-block, .article-block:nth-child(even) {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 16px;
+    }
+
+    .article-img-wrapper {
+        width: 100%;
+        max-width: 240px;
+        height: 240px;
+    }
+}
