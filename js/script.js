@@ -61,7 +61,6 @@ const portfolioCampaignMatrix = [
         articles: [
             {
                 text: `
-                <h1>Featured Campaign Sample</h1>
                     <p>Discover your coffee style match at <strong>𝗨𝗖𝗖 𝗖𝗼𝗳𝗳𝗲𝗲 𝗟𝗶𝗳𝗲𝘀𝘁𝘆𝗹𝗲 𝗦𝘁𝗼𝗿𝗲!</strong></p>
                     <p> 🍊Orange Tonic Cold Brew: For the determined and brave, this zesty blend invigorates with its bold flavor.</p>
                     <p>🍰 Tiramisu Iced Coffee: Sweet and caring, perfect for those who savor rich, velvety flavors.</p>
@@ -79,7 +78,7 @@ const portfolioCampaignMatrix = [
                     <p>Discover your favorite blend and scan the code below to enjoy a beat.</p>
                     <p>Make your grocery trips with a side of coffee unforgettable!</p>
                     <p>#UCCCoffeePH #UCCCoffeeLifestyleStore #MitsukoshiFreshBGC #FreshlyBrewed</p>`,
-                image: "assets/BranA/BrandA_IMG_4.png"
+                image: "assets/BranA/BrandA_IMG_5.png"
             },
             {
                 text: `
@@ -122,23 +121,14 @@ const portfolioCampaignMatrix = [
                     <p>Dalhin ang sarap ng Dimsum Factory sa bawat sandali ng iyong araw!</p>
                     <p>#DimsumFactory #DimsumFactoryPH #SarapNaBinabalikBalikan #TatakDimsumFactory #DFEverydaySpecial</p>` ,
                 image: "assets/BrandC/BrandC_IMG4.png"
-            },
-            {
-                text: `
-                    <p>Naghahanap ka pa ba ng ida-dagdag sa menu ng negosyo mo?</p>
-                    <p>Eto na ang aming Negosyo Pack Lumpia Shanghai. Walang hassle sa paghanda, mabilis lutuin, dekalidad at masarap pa! Ang aalalahanin mo na lang ay ang iyong customer na pipilahan ka!</p>
-                    <p>#DFNegosyoPack #DimsumFactory #DimsumFactoryPH #SarapNaBinabalikBalikan #TatakDimsumFactory #TagumpaySaSiomai #PartnersaNegosyo` ,
-                image: "assets/BrandC/BrandC_IMG6.png"
-            },
+            }
         ],
         gallery: [
             { thumb: "assets/BrandC/BrandC_IMG1.png", full: "assets/BrandC/BrandC_IMG2.png" },
             { thumb: "assets/BrandC/BrandC_IMG3.png", full: "assets/BrandC/BrandC_IMG4.png" },
-            { thumb: "assets/BrandC/BrandC_IMG5.png", full: "assets/BrandC/BrandC_IMG6.png" },
             { thumb: "assets/BrandC/BrandC_IMG7.png", full: "assets/BrandC/BrandC_IMG8.png" },
             { thumb: "assets/BrandC/BrandC_IMG9.png", full: "assets/BrandC/BrandC_IMG10.png" },
             { thumb: "assets/BrandC/BrandC_IMG11.png", full: "assets/BrandC/BrandC_IMG12.png" },
-            { thumb: "assets/BrandC/BrandC_IMG13.png", full: "assets/BrandC/BrandC_IMG14.png" },
             { thumb: "assets/BrandC/BrandC_IMG15.png", full: "assets/BrandC/BrandC_IMG16.png" }
 
         ]
