@@ -105,7 +105,7 @@ const portfolioCampaignMatrix = [
             <p><strong>What I Did:</strong><br>Assisted in developing visual concepts for social media posts and contributed copywriting that aligned with the brand’s approachable and mass-market communication style.</p>
             <p><strong>Creative Process:</strong><br>This project challenged me to create messaging that was simple, relatable, and easy to understand while still being engaging and appealing to a wide audience.</p>
         `,
-        images: ["assets/BrandC/BrandC_IMG1.png", "assets/BrandC/BrandC_IMG3.png"],
+        images: ["assets/BrandC/BrandC_IMG1.png", "assets/BrandC/BrandC_IMG3.png", "assets/BrandC/BrandC_IMG9.png"],
         articles: [
             {
                 text: `
