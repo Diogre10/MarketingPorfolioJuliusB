@@ -8,9 +8,13 @@ const portfolioCampaignMatrix = [
             <p><strong>Creative Process:</strong><br>I focused on creating a warm and encouraging tone that would resonate with individuals transitioning to healthier lifestyles, especially busy moms and pregnant women looking for healthier yet satisfying meal options. Additionally, I spearheaded strategic messaging designed to penetrate the corporate B2B industry market, positioning healthy meal plans as an elite corporate wellness perk.</p>
         `,
         images: ["assets/BrandB/BrandB_IMG1.png", "assets/BrandB/BrandB_IMG3.png", "assets/BrandB/BrandB_IMG5.png"],
+
+
+        
         articles: [
             {
                 text: `
+                   
                     <p>Explore the delicious variety of Daily’s Diet, featuring diverse meal categories from wholesome breakfasts to satisfying lunches and indulgent dinners. 🥗🍪</p>
                     <p>Offering delicious options to satisfy your tastes and nutritional needs. Find your ideal dish and savor the goodness today!</p>
                     <p>Order now and get a P100 discount when you use our promo code: Dailys100. Promo code applicable for first time orders only.</p>
@@ -67,6 +71,7 @@ const portfolioCampaignMatrix = [
         articles: [
             {
                 text: `
+                <h1>Featured Campaign Sample</h1>
                     <p>Discover your coffee style match at <strong>𝗨𝗖𝗖 𝗖𝗼𝗳𝗳𝗲𝗲 𝗟𝗶𝗳𝗲𝘀𝘁𝘆𝗹𝗲 𝗦𝘁𝗼𝗿𝗲!</strong></p>
                     <p> 🍊Orange Tonic Cold Brew: For the determined and brave, this zesty blend invigorates with its bold flavor.</p>
                     <p>🍰 Tiramisu Iced Coffee: Sweet and caring, perfect for those who savor rich, velvety flavors.</p>
@@ -78,11 +83,10 @@ const portfolioCampaignMatrix = [
             {
                 text: `
                     <p>Been waiting in long grocery queues at Mitsukoshi Fresh on a rainy day?</p>
-                    <p>Take a coffee break at UCC Coffee Lifestyle Store and enjoy our premium coffee selections. </p>
-                    <p>Discover your favorite blend and scan the code below to enjoy a beat.</p>
+                    <p>Take a coffee break at UCC Coffee Lifestyle Store and enjoy our premium coffee selections. Discover your favorite blend and scan the code below to enjoy a beat.</p>
                     <p>Make your grocery trips with a side of coffee unforgettable!</p>
                     <p>#UCCCoffeePH#UCCCoffeeLifestyleStore#MitsukoshiFreshBGC#FreshlyBrewed</p>`,
-                image: "assets/BranA/BrandA_IMG_5.png"
+                image: "assets/BranA/BrandA_IMG_4.png"
             },
             {
                 text: `
