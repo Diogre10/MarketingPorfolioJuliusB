@@ -18,11 +18,6 @@ const portfolioCampaignMatrix = [
                     <p>Explore the delicious variety of Daily’s Diet, featuring diverse meal categories from wholesome breakfasts to satisfying lunches and indulgent dinners. 🥗🍪</p>
                     <p>Offering delicious options to satisfy your tastes and nutritional needs. Find your ideal dish and savor the goodness today!</p>
                     <p>Order now and get a P100 discount when you use our promo code: Dailys100. Promo code applicable for first time orders only.</p>
-                    <p>Connect through these channels to get started:</p>
-                    <p>Mobile: 0920 978 8618</p>
-                    <p>Viber: 0956 284 1962</p>
-                    <p>Email: hello@dailysdiet.com</p>
-                    <p>Or visit www.dailysdiet.com</p>
                     <p>#dailysdiet #dailysdietph #fooddeliverymnl #fooddeliveryph #foodieph #foodiemnl #dietplan #dietplanph #mealplan #mealplanph</p>
                     `,
                 image: "assets/BrandB/BrandB_IMG2.png"
@@ -41,11 +36,6 @@ const portfolioCampaignMatrix = [
                     <p>Experience reliable all-weather delivery!</p>
                     <p>Whether it's a sunny day or a rainy afternoon, our nutritious meals are prepared fresh and delivered straight to your doorstep. Enjoy the convenience and flavor that keeps you healthy and satisfied, meal after meal!</p>
                     <p>Order now and get a P100 discount when you use our promo code: Dailys100. Promo code applicable for first time orders only.</p>
-                    <p>Connect through these channels to get started:</p>
-                    <p>Mobile: 0920 978 8618</p>
-                    <p>Viber: 0956 284 1962</p>
-                    <p>Email: hello@dailysdiet.com</p>
-                    <p>Or visit www.dailysdiet.com</p>
                     <p>#dailysdiet #dailysdietph #fooddeliverymnl #fooddeliveryph #foodieph #foodiemnl #dietplan #dietplanph #mealplan #mealplanph</p>`,
                 image: "assets/BrandB/BrandB_IMG6.png"
             },
@@ -76,16 +66,19 @@ const portfolioCampaignMatrix = [
                     <p> 🍊Orange Tonic Cold Brew: For the determined and brave, this zesty blend invigorates with its bold flavor.</p>
                     <p>🍰 Tiramisu Iced Coffee: Sweet and caring, perfect for those who savor rich, velvety flavors.</p>
                     <p>🥥 Iced Coconut Latte: For tough yet soft-hearted souls, this creamy blend offers a delightful coconut twist.</p>
-                    <p>🍮 Coffee Jelly Milk Coffee: Bubbly and outgoing personalities thrive on the refreshing burst of coffee jelly.</p> <p>There's a perfect match waiting for you here at 𝗠𝗶𝘁𝘀𝘂𝗸𝗼𝘀𝗵𝗶 𝗙𝗿𝗲𝘀𝗵 located at the basement level of <strong>Mitsukoshi BGC.</strong> What's your favorite choice? Let us know!</p>
+                    <p>🍮 Coffee Jelly Milk Coffee: Bubbly and outgoing personalities thrive on the refreshing burst of coffee jelly.</p>
+                    <p>There's a perfect match waiting for you here at 𝗠𝗶𝘁𝘀𝘂𝗸𝗼𝘀𝗵𝗶 𝗙𝗿𝗲𝘀𝗵 located at the basement level of <strong>Mitsukoshi BGC.</strong> </p>
+                    <p>What's your favorite choice? Let us know!</p>
                     <p>#UCCCoffeePH #UCCCoffeeLifestyleStore #MitsukoshiFreshBGC #CoffeeStylePairUp #CoffeePersonality #OrangeTonicColdBrew #TiramisuIcedCoffee #IcedCoconutLatte #CoffeeJellyMilkCoffee</p>`,
                 image: "assets/BranA/BrandA_IMG_4.png"
             },
             {
                 text: `
                     <p>Been waiting in long grocery queues at Mitsukoshi Fresh on a rainy day?</p>
-                    <p>Take a coffee break at UCC Coffee Lifestyle Store and enjoy our premium coffee selections. Discover your favorite blend and scan the code below to enjoy a beat.</p>
+                    <p>Take a coffee break at UCC Coffee Lifestyle Store and enjoy our premium coffee selections.</p>
+                    <p>Discover your favorite blend and scan the code below to enjoy a beat.</p>
                     <p>Make your grocery trips with a side of coffee unforgettable!</p>
-                    <p>#UCCCoffeePH#UCCCoffeeLifestyleStore#MitsukoshiFreshBGC#FreshlyBrewed</p>`,
+                    <p>#UCCCoffeePH #UCCCoffeeLifestyleStore #MitsukoshiFreshBGC #FreshlyBrewed</p>`,
                 image: "assets/BranA/BrandA_IMG_4.png"
             },
             {

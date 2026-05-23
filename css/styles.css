@@ -1,4 +1,10 @@
 ﻿/* ================= GLOBAL ARCHITECTURE ================= */
+*, *::before, *::after {
+    box-sizing: border-box;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+}
+
 body {
     margin: 0;
     font-family: "-apple-system", BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
@@ -6,8 +12,6 @@ body {
     overflow-x: hidden;
     color: #f5ebe0; /* Warm-cream default text color */
 }
-
-
 
 /* ================= BACKGROUND BLOBS ================= */
 .blob {
@@ -69,7 +73,6 @@ body {
     border: 1px solid rgba(255, 255, 255, 0.15);
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
     z-index: 1000;
-    box-sizing: border-box;
 }
 
 .logo {
@@ -130,7 +133,6 @@ body {
     border-radius: 24px;
     border: 1px solid rgba(255, 255, 255, 0.15);
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
-    box-sizing: border-box;
 }
 
 /* ================= ABOUT SECTION ================= */
@@ -320,15 +322,14 @@ body {
 .inline-extended-content,
 .works-extended-panel {
     max-height: 0;
-    margin: 0; /* Changed to 0 so there's absolutely no invisible space */
-    padding: 0; /* Changed to 0 to prevent box expansion when closed */
+    margin: 0;
+    padding: 0;
     opacity: 0;
     overflow: hidden;
     visibility: hidden;
     background: rgba(20, 10, 5, 0.35);
     border-radius: 20px;
     border: 1px solid transparent;
-    box-sizing: border-box;
     position: relative;
     text-align: left;
     transition: max-height 0.6s ease-in-out, margin 0.4s ease, padding 0.4s ease, opacity 0.4s ease, visibility 0.4s;
@@ -336,9 +337,9 @@ body {
 
     .inline-extended-content.visible,
     .works-extended-panel.visible {
-        max-height: 4000px;
+        max-height: 10000px;
         margin-top: 40px;
-        padding: 45px; /* Restores the padding only when expanded */
+        padding: 45px;
         opacity: 1;
         visibility: visible;
         border-color: rgba(255, 255, 255, 0.08);
@@ -492,7 +493,6 @@ body {
     .article-img-wrapper img {
         width: 100%;
         height: 100%;
-        
         object-fit: cover;
     }
 
@@ -501,7 +501,6 @@ body {
     color: #e3d5ca;
     font-size: 14px;
     line-height: 1.6;
-
     min-width: 0;
     overflow-wrap: break-word;
     word-wrap: break-word;
@@ -558,17 +557,16 @@ body {
         transform: translateY(-5px);
     }
 
-
 /* === MODAL OVERLAY STYLES === */
 .modal {
-    display: none; /* Keeps it hidden until clicked */
-    position: fixed !important; /* Forces it to hover over the screen */
-    z-index: 9999 !important; /* Ensures it stays on top of headers/navbars */
+    display: none;
+    position: fixed !important;
+    z-index: 9999 !important;
     left: 0;
     top: 0;
-    width: 100vw !important; /* Forces it to span the full viewport width */
-    height: 100vh !important; /* Forces it to span the full viewport height */
-    background-color: rgba(0, 0, 0, 0.85) !important; /* The dark overlay */
+    width: 100vw !important;
+    height: 100vh !important;
+    background-color: rgba(0, 0, 0, 0.85) !important;
     overflow: hidden;
 }
 
@@ -578,12 +576,12 @@ body {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%); /* Perfectly centers the image */
+    transform: translate(-50%, -50%);
     max-width: 90%;
-    max-height: 85vh; /* Prevents the image from being taller than the screen */
+    max-height: 85vh;
     border-radius: 8px;
-    object-fit: contain; /* Ensures the image doesn't stretch weirdly */
-    box-shadow: 0 10px 30px rgba(0,0,0,0.5); /* Optional: adds a nice shadow */
+    object-fit: contain;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
 }
 
 /* === THE CLOSE BUTTON === */
@@ -602,6 +600,7 @@ body {
     .close-btn:hover {
         color: #ccc;
     }
+
 /* ================= FOOTER ================= */
 .footer {
     text-align: center;
@@ -661,6 +660,14 @@ body {
 }
 
 @media (max-width: 600px) {
+    .campaign-header h3 {
+        font-size: 32px;
+    }
+
+    .line:nth-child(1) {
+        font-size: 32px;
+    }
+
     .article-block, .article-block:nth-child(even) {
         flex-direction: column;
         align-items: center;
