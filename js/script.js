@@ -294,3 +294,25 @@ function activateInlineAccordion(cardElement, targetActiveIndex) {
         }
     });
 }
+
+/* ================= MOCKUP MODAL ================= */
+function openMockModal(imageSrc) {
+    if (!modal || !modalImg) return;
+
+    modal.style.display = "block";
+    modalImg.src = imageSrc;
+}
+
+/* ================= MOCKUP GALLERY ================= */
+function toggleMockGallery() {
+    const gallery = document.getElementById("inlineGallery");
+    if (!gallery) return;
+
+    gallery.classList.toggle("visible");
+
+    if (gallery.classList.contains("visible")) {
+        setTimeout(() => {
+            gallery.scrollIntoView({ behavior: "smooth", block: "start" });
+        }, 150);
+    }
+}

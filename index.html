@@ -33,17 +33,36 @@
         </div>
 
         <!-- Inline About Details Panel -->
-        <div id="about-extended" class="inline-extended-content">
-            <div id="about-extended" class="inline-extended-panel">
-                <div class="about-content-wrapper">
-                    <h3>About Me</h3>
-                    <p>I’m a copywriter and social media content creator focused on creating engaging brand messaging and creative social media concepts. I enjoy building content that connects with audiences through relatable storytelling, strategic brand voice, and visually engaging campaigns.</p>
-                    <br /><br />
-                    <p>I’ve worked on brands in food, lifestyle, and beverage industries, helping create campaigns that align with each brand’s identity and audience.</p>
-                </div>
-            </div>
 
-        </div>
+    <div id="about-extended" class="inline-extended-content">
+		<div class="inline-extended-panel">
+			<div class="about-content-wrapper" style="display: flex; gap: 40px; text-align: left; flex-wrap: wrap;">
+				
+				<div class="about-half" style="flex: 1; min-width: 300px;">
+					<h3>About Me</h3>
+					<p>I’m a copywriter and social media content creator focused on creating engaging brand messaging and creative social media concepts. I enjoy building content that connects with audiences through relatable storytelling, strategic brand voice, and visually engaging campaigns.</p>
+					<br>
+					<p>I’ve worked on brands in food, lifestyle, and beverage industries, helping create campaigns that align with each brand’s identity and audience.</p>
+				</div>
+
+				<div class="skills-half" style="flex: 1; min-width: 300px;">
+					<h3>My Skills</h3>
+					<div class="skills-tags" style="display: flex; flex-wrap: wrap; gap: 10px;">
+						<span class="skill-tag">Social Media Management</span>
+						<span class="skill-tag">Content Creation & Copywriting</span>
+						<span class="skill-tag">Digital Marketing Strategy</span>
+						<span class="skill-tag">Canva & Content Design</span>
+						<span class="skill-tag">Meta Business Suite</span>
+						<span class="skill-tag">Shopify Management</span>
+						<span class="skill-tag">Short-form Video (CapCut)</span>
+						<span class="skill-tag">Community Engagement</span>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
     </section>
 
     <!-- ================= BRAND CAMPAIGNS SECTION ================= -->
@@ -122,6 +141,100 @@
             </div>
         </div>
     </section>
+	
+	<!-- ================= MOCK DESIGN SECTION ================= -->	
+	<section id="mock-design" class="section works-section">
+        <div class="campaign-block layout-centered">
+            <div class="campaign-header">
+                <h3>Sample Designs and Ad Copies</h3>
+                <p class="subheader">All designs, brand concepts, and advertising copy presented in this portfolio are self-initiated projects created for practice, demonstration, and portfolio purposes only. Any brand names, products, or campaigns featured are fictional unless otherwise stated and do not represent actual client work. These samples are intended to showcase my creative, branding, and design capabilities.</p>
+            </div>
+			
+			<div class="mockup-grid">
+
+				<!-- Row 1 -->
+				<div class="lift-card" onclick="openMockModal('assets/Mock/IMG1-2.png')">
+					<div class="card-image-wrapper">
+						<img src="assets/Mock/IMG1.png" alt="">
+					</div>
+					<span>Sample Mock</span>
+				</div>
+
+				<div class="lift-card" onclick="openMockModal('assets/Mock/IMG2-2.png')">
+					<div class="card-image-wrapper">
+						<img src="assets/Mock/IMG2.png" alt="">
+					</div>
+					<span>Sample Mock</span>
+				</div>
+
+				<div class="lift-card" onclick="openMockModal('assets/Mock/IMG3-2.png')">
+					<div class="card-image-wrapper">
+						<img src="assets/Mock/IMG3.png" alt="">
+					</div>
+					<span>Sample Mock</span>
+				</div>
+
+				<!-- Row 2 -->
+				<div class="lift-card" onclick="openMockModal('assets/Mock/IMG4-2.png')">
+					<div class="card-image-wrapper">
+						<img src="assets/Mock/IMG4.png" alt="">
+					</div>
+					<span>Sample Mock</span>
+				</div>
+
+				
+
+				<!-- LAST CARD = GALLERY -->
+				<div class="lift-card" onclick="toggleMockGallery()">
+					<div class="card-image-wrapper">
+						<img src="assets/Mock/IMG1.png" alt="">
+					</div>
+					<span>View More</span>
+				</div>
+
+			</div>
+			
+<div id="inlineGallery" class="works-extended-panel">
+    <button class="close-x-inline" onclick="closeInlineCampaign(this)">×</button>
+    <div class="campaign-gallery">
+        <div class="campaign-header">
+            <h3>More Mockup Projects</h3>
+			<p class="subheader">These are strictly "what-if" scenarios. No real products were harmed (or created) in the making of this portfolio!</p>
+        </div>
+        <!-- This track will now scroll horizontally -->
+        <div class="gallery-track" style="display: flex; gap: 20px; overflow-x: auto; padding-bottom: 20px;">
+            
+            <div class="lift-card" onclick="openMockModal('assets/Mock/IMG1-2.png')" style="flex: 0 0 300px;">
+                <div class="card-image-wrapper">
+                    <img src="assets/Mock/IMG1.png" alt="Mockup 1">
+                </div>
+            </div>
+
+            <div class="lift-card" onclick="openMockModal('assets/Mock/IMG2-2.png')" style="flex: 0 0 300px;">
+                <div class="card-image-wrapper">
+                    <img src="assets/Mock/IMG2.png" alt="Mockup 2">
+                </div>
+            </div>
+
+            <div class="lift-card" onclick="openMockModal('assets/Mock/IMG3-2.png')" style="flex: 0 0 300px;">
+                <div class="card-image-wrapper">
+                    <img src="assets/Mock/IMG3.png" alt="Mockup 3">
+                </div>
+            </div>
+            
+            <div class="lift-card" onclick="openMockModal('assets/Mock/IMG4-2.png')" style="flex: 0 0 300px;">
+                <div class="card-image-wrapper">
+                    <img src="assets/Mock/IMG4.png" alt="Mockup 4">
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+        </div>
+    </section>
+	
 
 
 
