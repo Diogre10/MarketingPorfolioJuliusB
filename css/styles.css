@@ -95,6 +95,15 @@ body {
         opacity: 1;
         color: #ffffff;
     }
+	
+.contact{
+	font-size: 18px;
+    color: #e3d5ca;
+    font-weight: bold;
+
+}
+	
+}
 
 /* Styling for the new About Me section */
 .about-content-wrapper {
